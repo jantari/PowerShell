@@ -68,7 +68,7 @@ jobs:
             }
           }
         shell: pwsh -Command "$ProgressPreference = 'SilentlyContinue'; & '{0}'"
-				if: env.DELETE_OLD_COMMENTS == '1'
+				if: env.DELETE_OLD_COMMENTS == 1
 
       - name: Create PR comment
         run: |
